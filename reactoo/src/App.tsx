@@ -33,9 +33,10 @@
 // }
 //
 // export default App
-import Message from './Message';
-
+import ListGroup from "./components/ListGroup.tsx";
 function App() {
-    return <div><Message/></div>;
+    let items=["new York","London","Düsseldorf","neuss"];
+
+    return <div><ListGroup items={items} heading="Cities" /></div>;
 }
 export default App;
